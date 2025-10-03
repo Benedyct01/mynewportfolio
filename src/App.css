@@ -1,0 +1,166 @@
+@import 'tailwindcss';
+@custom-variant hover (&:hover);
+@tailwind utilities;
+
+@theme{
+      --animate-slide-in: slide-in-scale 0.3s ease-out;
+
+      @keyframes slide-in-scale {
+            0% {
+                  opacity: 0;
+                  transform: translateY(100%);
+            }
+            100% {
+                  opacity: 1;
+                  transform: translateY(0);
+            }
+      }
+}
+
+
+*{
+      font-family: 'Prompt', sans-serif;
+}
+
+body {
+      contain: paint;
+}
+
+:root{
+      --black-gradient: linear-gradient(
+        144.39deg,
+        #ffffff -278.56%,
+        #f59e0b -78.47%,
+        #11101d 91.61%
+      );
+
+      --light-gradient: linear-gradient(
+        144.39deg,
+        #ffffff -278.56%,
+            #fbbf24 8.47%,
+            #000000 91.61%
+      );
+}
+
+[data-theme="dark"] {
+      --font-color: #eee;
+      --background-color: #333;
+      --link-color: lightblue;
+    }
+
+:is(.dark .dark\:feature-card:hover) {
+      background-image : linear-gradient(
+            144.39deg,
+            #ffffff -278.56%,
+            #f59e0b -78.47%,
+            #000000 91.61%
+          );
+          color: var(--font-color);
+    }
+
+.feature-card-light:hover{
+   background: var(--light-gradient);
+   color: var(--color-white);
+}
+
+.perspective {
+      perspective: 2000px;
+}
+
+/* For swiper styling on the TechnicalProficiency page */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border: #f59e0b 2px solid;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+
+.swiper-slide:nth-child(n) {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 40%;
+}
+
+.wave {
+      background-image: url('/public/wave.svg');
+      background-size: cover;
+      background-position: center;
+    }
+
+
+.projectscontainer{
+      max-height: 100vh;
+      overflow-y: scroll;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      scroll-snap-type: mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+.projectscontainer {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+.projectscontainer::-webkit-scrollbar {
+  width: 1px;
+}
+.projectscontainer::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+.projectscontainer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.mask{
+      -webkit-mask-image: url('/mask2.png');
+      mask-image: url('/mask2.png');
+      -webkit-mask-position: right;
+      mask-position: right;
+      -webkit-mask-size: 100% 150%;
+      mask-size: 100% 150%;
+      height: 100%;
+}
+
+/* @media (max-width: 640px) {
+      .mask{
+      -webkit-mask-image:none;
+      mask-image:none;
+      background-size: contain;
+      }
+} */
+
+@media (max-width: 1024px) {
+  .mask{
+      -webkit-mask-image: url('/maskanoda.png');
+      mask-image: url('/maskanoda.png');
+      -webkit-mask-position: right;
+      mask-position: right;
+      -webkit-mask-size: 100% 150%;
+      mask-size: 100% 150%;
+      height: 100%;
+}    
+}
+@custom-variant dark (&:where(.dark, .dark *))
+
