@@ -56,13 +56,13 @@ const Header = () => {
     initial={{ y: -100 }}
       animate={{ y: showNavbar ? 0 : -100 }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
-    className={`w-full sticky top-0 text-black dark:text-white p-4 z-50 ${backdropFilter? 'backdrop-blur-md' : '' }`}>
+    className={`w-full sticky top-0 text-black dark:text-white md:p-4 z-50 ${backdropFilter? 'backdrop-blur-md' : '' }`}>
       <div className="flex flex-row items-center justify-between">
       <a href="" className="text-2xl font-bold"><img src="/logo.png" alt="" className='w-[67px] md:w-[72px] h-[57px] md:h-[62px] dark:invert'/></a>
       <DarkModeToggling />
 
       <button 
-      className="block  cursor-pointer md:hidden"
+      className="block max-md:pr-2.5 cursor-pointer md:hidden"
       onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <MdMenuOpen className='text-3xl' /> : <MdMenu className='text-3xl' />}
             
