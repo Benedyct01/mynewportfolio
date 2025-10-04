@@ -10,7 +10,7 @@ const StatInfoCard = ({count, label, style}) => {
   return (
     <div 
     ref={ref}
-    className='flex gap-3 md:gap-5 bg-amber-500 rounded-[14px] p-5 md:p-2 m-2 mx-auto max-sm:mb-2 w-full'>
+    className='flex gap-3 lg:gap-5 bg-amber-500 rounded-[14px] p-5 md:p-2 m-2 mx-auto max-sm:mb-2 w-full'>
       <h4 className={`text-4xl md:text-xl lg:text-3xl font-bold text-white dark:text-[#310e3a] p-2 max-sm:pl-4 ${style || ""}`}>{inView ? (
           <CountUp end={parseInt(count)} duration={5} />
         ) : (

@@ -9,6 +9,7 @@ import Projects from './components/Projects'
 import Projectsmobile from './components/Projectsmobile'
 import Techicons from './components/Techicons'
 import Contact from './components/Contact'
+import Projecttitle from './components/Projecttitle'
 
 const App = () => {
   
@@ -27,7 +28,9 @@ const App = () => {
         <About />
         <Education/>
         <Experience/>
-        <div className='max-md:hidden'><Projects/></div>
+        <div className='max-md:hidden'>
+          <Projecttitle/>
+          <Projects/></div>
         <Projectsmobile/>
         <Techicons/>
         <Contact/>

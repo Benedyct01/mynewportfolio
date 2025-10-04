@@ -57,12 +57,12 @@ const Header = () => {
       animate={{ y: showNavbar ? 0 : -100 }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
     className={`w-full sticky top-0 text-black dark:text-white md:p-4 z-50 ${backdropFilter? 'backdrop-blur-md' : '' }`}>
-      <div className="flex flex-row items-center justify-between">
-      <a href="" className="text-2xl font-bold"><img src="/logo.png" alt="" className='w-[67px] md:w-[72px] h-[57px] md:h-[62px] dark:invert'/></a>
+      <div className="flex flex-row items-center justify-between max-sm:p-4">
+      <a href="" className="text-2xl font-bold"><img src="/logo.png" alt="" className='w-[45px] md:w-[55px] h-[36px] md:h-[46px] dark:invert'/></a>
       <DarkModeToggling />
 
       <button 
-      className="block max-md:pr-2.5 cursor-pointer md:hidden"
+      className="block cursor-pointer md:hidden"
       onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <MdMenuOpen className='text-3xl' /> : <MdMenu className='text-3xl' />}
             
@@ -77,10 +77,9 @@ const Header = () => {
       >
       <li>
                   <Link href='#'
-                  className={`block ${isOpen ? "" : "max-md:hidden"} pt-2 pb-2 
+                  className={`block ${isOpen ? "" : "max-md:hidden"} pt-2 pb-2
                   hover:text-black 
-                  dark:hover:text-teal-200
-                  dark:hover:md:text-amber-500`} 
+                  hover:md:text-amber-500`} 
                   to='home'
                   smooth={true} 
                   offset={-80}
@@ -94,8 +93,7 @@ const Header = () => {
                   <Link href='#' 
                   className={`block ${isOpen ? "delay-300" : "max-md:hidden"}  pt-2 pb-2 
                   hover:text-black
-                  dark:hover:text-teal-200
-                  dark:hover:md:text-amber-500`}
+                hover:md:text-amber-500`}
                   to='about'
                   smooth={true} 
                   offset={-80}
@@ -107,9 +105,9 @@ const Header = () => {
 
             <li>
                   <Link href='#' 
-                  className={`block ${isOpen ? "delay-300" : "max-md:hidden"}   pt-2 pb-2 hover:text-black
-                  dark:hover:text-teal-200
-                  dark:hover:md:text-amber-500`}
+                  className={`block ${isOpen ? "delay-300" : "max-md:hidden"} pt-2 pb-2
+                  hover:text-black 
+                hover:md:text-amber-500`}
                   to='education'
                   smooth={true} 
                   offset={-80}
@@ -121,9 +119,9 @@ const Header = () => {
 
             <li>
                   <Link href='#' 
-                  className={`block ${isOpen ? "delay-300" : "max-md:hidden"}   pt-2 pb-2 hover:text-black
-                  dark:hover:text-teal-200
-                  dark:hover:md:text-amber-500`}
+                  className={`block ${isOpen ? "delay-300" : "max-md:hidden"}   pt-2 pb-2
+                  hover:text-black
+                  hover:md:text-amber-500`}
                   to='experience'
                   smooth={true} 
                   offset={-80}
@@ -133,12 +131,26 @@ const Header = () => {
                   </Link>
             </li>
 
-            <li>
+            <li className='max-md:hidden'>
                   <Link href='#' 
-                  className={`block ${isOpen ? "delay-300" : "max-md:hidden"}   pt-2 pb-2 hover:text-black
-                  dark:hover:text-teal-200
-                  dark:hover:md:text-amber-500`}
-                  to='projects'
+                  className={` ${isOpen ? "delay-300" : "max-md:hidden"} max-md:hidden  pt-2 pb-2
+                  hover:text-black 
+                  hover:md:text-amber-500`}
+                  to='proj'
+                  offset={144}
+                  smooth={true} 
+                  spy={true} 
+                  duration={500}>
+                  Projects
+                  </Link>
+            </li>
+
+            <li className='md:hidden'>
+                  <Link href='#' 
+                  className={`block ${isOpen ? "delay-300" : "max-md:hidden"} md:hidden  pt-2 pb-2
+                  hover:text-black 
+                  hover:md:text-amber-500`}
+                  to='projectsmobile'
                   smooth={true} 
                   spy={true} 
                   duration={500}>
@@ -148,9 +160,9 @@ const Header = () => {
 
             <li>
                   <Link href='#' 
-                  className={`block ${isOpen ? "delay-300" : "max-md:hidden"}   pt-2 pb-2 hover:text-black
-                  dark:hover:text-teal-200
-                  dark:hover:md:text-amber-500`}
+                  className={`block ${isOpen ? "delay-300" : "max-md:hidden"}  pt-2 pb-2
+                  hover:text-black 
+                  hover:md:text-amber-500`}
                   to='contact'
                   smooth={true} 
                   offset={-80}

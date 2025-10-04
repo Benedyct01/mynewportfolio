@@ -28,9 +28,9 @@ const Hero = () => {
   </div>
   <div className='flex flex-col gap-8 lg:gap-12 xl:gap-16 max-md:mt-[300px]'>
     <div className='flex flex-col space-y-6 lg:space-y-7'>
-      <div className="flex flex-row items-center">
+      <div className="flex flex-row items-center max-sm:mx-auto">
                   <span className='inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-indigo-900 text-amber-400 mr-2'>Hi!</span>
-                  <h2 className='inline-block px-3 py-1.5 lg:px-4 lg:py-2 rounded-full bg-neutral-900 text-amber-400 font-semibold text-sm backdrop-blur-sm border border-neutral-800/50'>
+                  <h2 className='inline-block px-3 py-1.5 lg:px-4 lg:py-2 rounded-full bg-neutral-900 text-amber-400 font-semibold text-[11px] sm:text-sm backdrop-blur-sm border border-neutral-800/50'>
                   <i className='bx bx-globe mr-1'></i>Web Developer/Research Writer</h2>
                 </div>
                 <h1 className='text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-neutral-900 dark:text-white'>
@@ -62,7 +62,7 @@ const Hero = () => {
             <i className='bx bx-check-circle mr-1 text-amber-500 '></i>Responsive
           </div>
         </div> */}
-        <div className=" absolute top-25 right-[15%] lg:right-[20%] animate-bounce delay-300">
+        <div className=" absolute top-25 right-[10%] sm:right-[15%] lg:right-[20%] animate-bounce delay-300">
           <div className="bg-neutral-900 text-white px-2.5 py-1.5 rounded-lg text-xs lg:text-sm flex items-center shadow-lg dark:bg-white dark:text-neutral-900 md:mt-10">
             <i className='bx bx-check-circle mr-1 text-amber-500 '></i>Accessible
           </div>

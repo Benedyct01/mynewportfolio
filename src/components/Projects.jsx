@@ -69,9 +69,7 @@ const Projects = () => {
   };
   return (
     <>
-    <Element name='projects'>
-    <h1
-    className="text-center text-4xl font-semibold pt-[32px] pb-[42px] pr-[24px] pl-[24px] mb-8 text-black dark:text-white" id='projects'>My Recent Projects</h1>
+    <Element>
     <div ref={container} className=" bg-[#f2f2f2] dark:bg-[#000000] projectscontainer">
       <div className='fixed flex flex-col gap-12 items-center justify-center h-screen max-lg:w-[8%] w-[10%] max-sm:hidden'>
         {slides.map((bullet, index) => (

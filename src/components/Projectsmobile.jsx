@@ -6,8 +6,8 @@ import { slides } from '../data';
 const Projectsmobile = () => {
     return (
         <>
-        <Element name='projects'>
-        <section className='md:hidden w-full' id='projects'>
+        <Element name='projectsmobile'>
+        <section className='md:hidden w-full'>
             <motion.h1 
 initial={{ opacity:0, y:100 }}
 whileInView={{ opacity:1, y:0}}

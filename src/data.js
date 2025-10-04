@@ -1,5 +1,5 @@
 export const STATS = [
-      {id: "01", count: "3", label: 'Years of \nExperience', style: "mr-5"},
+      {id: "01", count: "3", label: 'Years of \nExperience', style: "mr-4 md:mr-2 lg:mr-3"},
       {id: "02", count: "15", label: 'Projects \nCompleted'},
       {id: "03", count: "37", label: 'Happy \nClients'},
 ]
@@ -23,6 +23,6 @@ export const slides = [
     { category: "E-Commerce", name: "MVP Studio Enoverlab", color: "text-red-600", detail: "MVP Studio by Enoverlab is a secure, user-friendly platform that assists startups and innovators in rapidly turning ideas into minimum viable products (MVPs), offering guidance, acceleration, and actionable tools", img: "/mvpstudio.png", link: "https://mvpstudio.enoverlab.com" },
     { category: "HealthCare", name: "ThriveWell Healthcare", color: "text-red-600", detail: "Thrivewell Healthcare empowers individuals with chronic illnesses to live better, offering tailored support, education, and management solutions for conditions like diabetes and hypertension.", img: "/thrivewell.png", link: "https://thrivewellhealthcare.com" },
     { category: "AgricTech", name: "Next-gen Agribusiness", color: "text-red-600", detail: "NextGen Agribusiness is a forward-thinking agricultural platform offering innovative solutions, insights, and tools to help farmers scale operations, embrace agri-tech, and optimize productivity in modern farming.", img: "/nextgen.png", link: "https://nextgen-agribusiness.netlify.app/" },
-    { category: "E-Commerce", name: "Wish Girl", color: "text-red-600", detail: "WishStore is a modern e-commerce platform offering a wide range of clothes and accessories with features like fast delivery, secure payments, and reliable customer service.", img: "/wish.png", link: "https://wishstore.netlify.app/" },
+    { category: "E-Commerce", name: "Wish", color: "text-red-600", detail: "WishStore is a modern e-commerce platform offering a wide range of clothes and accessories with features like fast delivery, secure payments, and reliable customer service.", img: "/wish.png", link: "https://wishstore.netlify.app/" },
   ];
 

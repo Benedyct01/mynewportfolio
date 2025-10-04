@@ -5,6 +5,7 @@ import { Element } from 'react-scroll'
 
 const Experience = () => {
   return (
+    <>
     <Element name='experience'>
     <section className='w-full' id='experience'>
     <motion.h1 
@@ -26,7 +27,7 @@ className="text-center text-4xl font-semibold pt-[42px] md:pb-[42px] pr-[24px] p
         <div className="grid grid-cols-1 gap-8  md:grid-cols-2 p-5 lg:px-15">
           {experiences.map((experience, idx) => (
         <motion.div
-      className="px-12 py-8 transition-colors duration-300 transform border-2 dark:border border-amber-500 rounded-xl group dark:border-gray-200 dark:feature-card feature-card-light hover:border-amber-600 min-h-[300px]"
+      className="px-4 sm:px-6 lg:px-12 py-8 transition-colors duration-300 transform border-2 dark:border border-amber-500 rounded-xl group dark:border-gray-200 dark:feature-card feature-card-light hover:border-amber-600 min-h-[300px]"
       initial={{ y: -30, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: false, amount: 0.1 }}
@@ -62,6 +63,7 @@ className="text-center text-4xl font-semibold pt-[42px] md:pb-[42px] pr-[24px] p
       </div>
     </section>
     </Element>
+    </>
   )
 }
 
