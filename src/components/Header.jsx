@@ -56,9 +56,9 @@ const Header = () => {
     initial={{ y: -100 }}
       animate={{ y: showNavbar ? 0 : -100 }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
-    className={`w-full ml-[0.5%] sticky top-0 text-black dark:text-white p-4 z-50 ${backdropFilter? 'backdrop-blur-md' : '' }`}>
+    className={`w-full sticky top-0 text-black dark:text-white p-4 z-50 ${backdropFilter? 'backdrop-blur-md' : '' }`}>
       <div className="flex flex-row items-center justify-between">
-      <a href="" className="text-2xl font-bold"><img src="/logo.png" alt="" className='w-[60px] h-[50px] dark:invert'/></a>
+      <a href="" className="text-2xl font-bold"><img src="/logo.png" alt="" className='w-[67px] md:w-[72px] h-[57px] md:h-[62px] dark:invert'/></a>
       <DarkModeToggling />
 
       <button 

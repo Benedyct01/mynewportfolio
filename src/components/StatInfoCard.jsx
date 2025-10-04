@@ -16,7 +16,7 @@ const StatInfoCard = ({count, label, style}) => {
         ) : (
           count // Fallback to static count if not in view
         )}</h4>
-      <p className='text-sm md:text-[14px] max-sm:pl-4  text-[#310e3a]  mt-2 font-semibold leading-6 whitespace-pre-line'>{label}</p>
+      <p className='text-sm md:text-[14px] max-sm:pl-2  text-[#310e3a] mt-2 font-semibold leading-6 md:whitespace-pre-line'>{label}</p>
     </div>
   )
 }
