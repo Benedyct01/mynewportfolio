@@ -56,7 +56,7 @@ className="flex flex-col w-[50%] max-md:w-full">
     <a href='https://wa.me/2348104697466' target="_blank" rel="noopener noreferrer"><img src="/whatsapp.svg" alt="" className='w-[10px]h-[10px] not-dark:invert-100' /></a>
     <a href='https://www.facebook.com/share/18fu79FPDJ/?mibextid=wwXIfr' target="_blank" rel="noopener noreferrer"><img src="/facebook-f.svg" alt="" className='w-[20px]h-[20px] not-dark:invert-100' /></a>
     <a href='https://www.instagram.com/sinabenedict?igsh=MTVkeXV3NWEwdDdreA%3D%3D&utm_source=qr'target="_blank" rel="noopener noreferrer"><img src="/instagram.svg" alt="" className='w-[20px]h-[20px] not-dark:invert-100' /></a>
-    <a href='https://www.linkedin.com/in/osinachi-ekwueme-he-him-b38453184?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'target="_blank" rel="noopener noreferrer"><img src="/linkedin.svg" alt="" className='w-[20px]h-[20px] not-dark:invert-100' /></a>
+    <a href='http://linkedin.com/in/osinachi-ekwueme-b38453184'target="_blank" rel="noopener noreferrer"><img src="/linkedin.svg" alt="" className='w-[20px]h-[20px] not-dark:invert-100' /></a>
     <a href='https://x.com/consort_28686?s=21' target="_blank" rel="noopener noreferrer"><img src="/twitter.svg" alt="" className='w-[20px]h-[20px] not-dark:invert-100'/></a>
   </motion.div>
 </motion.div>
