@@ -32,7 +32,7 @@ className="flex flex-col w-[50%] max-md:w-full">
       damping: 20,
     }}
     src="/me.jpeg" alt="" className='w-[100px] justify-end h-[100px] rounded-full object-cover' />
-<a href="https://drive.google.com/file/d/1QAGl-XrNEmokdlboh3K_WD5pfFm3Ce58/view?usp=drivesdk" download="Osinachi's_CV" target='_blank'><motion.button
+<a href="https://drive.google.com/file/d/1hp4ARSaOGGa7my2oBnekmNi5pl1e_rUt/view?usp=sharing" download="Osinachi's_CV" target='_blank'><motion.button
     initial={{ opacity:0, y:-100 }}
     whileInView={{ opacity:1, y:0}}
     transition={{

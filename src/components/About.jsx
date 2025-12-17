@@ -43,7 +43,7 @@ const About = () => {
     technology education, and analyzing business data for strategic decision-making. Adept at
     web development, fintech solutions, and market strategy, with a strong background in digital
     transformation for businesses.</motion.p>
-    <a href="https://drive.google.com/file/d/1QAGl-XrNEmokdlboh3K_WD5pfFm3Ce58/view?usp=drivesdk" download="Osinachi's_CV" target='_blank'><motion.button
+    <a href="https://drive.google.com/file/d/1hp4ARSaOGGa7my2oBnekmNi5pl1e_rUt/view?usp=sharing" download="Osinachi's_CV" target='_blank'><motion.button
     initial={{ opacity:0, y:-100 }}
     whileInView={{ opacity:1, y:0}}
     transition={{
